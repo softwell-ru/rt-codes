@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\src\AssemblyInfo.props" />
+  <Import Project="..\TestsAssemblyInfo.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <AssemblyName>SoftWell.RtCodes.Sources.Csv.Tests</AssemblyName>
+    <RootNamespace>SoftWell.RtCodes.Sources.Csv.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Linq.Async" Version="6.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Sources.Csv\Sources.Csv.csproj" />
+    <ProjectReference Include="..\Tests.Base\Tests.Base.csproj" />
+  </ItemGroup>
+
+</Project>
